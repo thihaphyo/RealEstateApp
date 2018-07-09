@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_medium_2"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:id="@+id/ll_search_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@drawable/rounded_corner"
+        android:elevation="@dimen/margin_small"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_medium_2"
+        android:paddingTop="@dimen/margin_medium"
+        android:paddingLeft="@dimen/margin_medium"
+        android:paddingRight="@dimen/margin_medium">
+
+        <RelativeLayout
+            android:id="@+id/rl_type"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_medium"
+                android:text="Type"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="@dimen/text_regular" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/sp_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_type"
+                android:paddingLeft="0dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="@dimen/margin_small"
+                android:entries="@array/townships_array"
+
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_city"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_medium"
+                android:text="City"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="@dimen/text_regular" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/sp_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_city"
+                android:paddingLeft="0dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="@dimen/margin_small"
+                android:entries="@array/townships_array"
+
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_Budget"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_budget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_medium"
+                android:text="Budget"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="@dimen/text_regular" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/sp_budget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_budget"
+                android:paddingLeft="0dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="@dimen/margin_small"
+                android:entries="@array/townships_array"
+
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_search_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ll_search_box"
+        android:layout_below="@+id/ll_search_box"
+        android:layout_marginTop="@dimen/margin_small"
+        android:paddingLeft="@dimen/margin_small"
+        android:text="SEARCH RESULTS"
+        android:textAllCaps="true"
+        android:textColor="@color/colorTextSecond"
+        android:textSize="@dimen/text_regular" />
+
+</RelativeLayout>

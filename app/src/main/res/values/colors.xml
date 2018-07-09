@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorGreyishBrown">#424242</color>
+    <color name="pinkish_grey">#bdbdbd</color>
+    <color name="purpley_grey">#868586</color>
+    <color name="greyish_brown_two">#4a4a4a</color>
+    <color name="vermillion">#dbef1e1e</color>
+    <color name="faded_orange">#ee8749</color>
+    <color name="purpley_grey_two">#8b898b</color>
+
+    <color name="colorTextBlack">#000000</color>
+    <color name="colorTextSecond">#8B898B</color>
+
+</resources>
